@@ -251,9 +251,8 @@ app.put("/consumables/updateNotes", (req, res) => {
 // Here, we are destructuring the req.body object to get all the required fields: name, type, manufacturer, lotNumber, expiration, quantity, price, notes, and wage. Then, we are updating all these columns in the UPDATE query using placeholders (?) and passing the corresponding values as an array in the second argument to the db.query function. Finally, we are sending the result back to the client as a response.
 // UPDATE CONSUMABLES
 
-// if you would like to grab something from the fron end we use req, and if we want to grab something from the backend we use rest
-// this function will send all the info to the employees tasble
-// FIRST FUNCTION CREATED WHEN DOING BACKEND
+// if you would like to grab something from the front end we use req, and if we want to grab something from the backend we use rest
+// this function will send all the info to the employees table
 app.post("/create", (req, res) => {
   const name = req.body.name;
   const age = req.body.age;
@@ -349,7 +348,7 @@ app.delete("/delete/:id", (req, res) => {
 });
 
 app.listen(3030, () => {
-  console.log("Yey, your server is running on port 3030");
+  console.log("SHEEEEEEEEEESSSHHHH, your server is running on port 3030!!");
 });
 
 
